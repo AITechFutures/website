@@ -250,7 +250,8 @@ figcaption{font:500 .75rem var(--f-mono);letter-spacing:.06em;color:var(--text-g
 .photo{margin:0 0 var(--s5)}
 .photo img{width:100%;height:auto;aspect-ratio:1536/1024;border-radius:var(--radius);display:block}
 .photo figcaption{margin-top:var(--s2)}
-.photo-dark{margin:var(--s5) 0 0}
+.photo-dark{margin:var(--s5) 0 0;max-width:520px}
+.photo-dark img{aspect-ratio:1/1} /* square crop at every width: it sits in a narrow column */
 .photo-dark figcaption{color:var(--industrial-gray)}
 @media (max-width:600px){.photo img{aspect-ratio:1/1}} /* square crops with larger callouts on phones */
 .iso{margin:0 0 var(--s5);background:var(--tech-black);border-radius:var(--radius);padding:clamp(8px,2vw,24px)}
