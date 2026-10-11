@@ -8,6 +8,7 @@
 <!-- PREVIEW ONLY: remove the next line before this page goes live on aitechfutures.com -->
 <meta name="robots" content="noindex,nofollow">
 <link rel="canonical" href="https://www.aitechfutures.com/vision.html">
+<meta property="og:url" content="https://www.aitechfutures.com/vision.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ATF">
 <meta property="og:title" content="Our Approach to Edge Intelligence | ATF">
@@ -18,9 +19,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="theme-color" content="#000000">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@500;600&family=Montserrat:wght@500;600;700&family=Space+Grotesk:wght@400;500&display=swap">
+<link rel="preload" href="assets/fonts/bebas-neue.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -99,7 +98,7 @@
       <p>Every long journey needs a first step that can be proven. Manufacturing is data-rich and demanding, and it has a clear measure of success: a machine either fails unexpectedly or it does not.</p>
       <p>That is why our vision is to make unplanned downtime a thing of the past, for every organisation that depends on physical assets, not just the giants.</p>
       <p>Our platform puts these principles to work. It is designed to learn each machine’s normal behaviour, keep raw data on site and build a body of verified insight. Over time, that includes the hard-won knowledge of experienced maintenance teams, captured with their involvement and consent.</p>
-      <p class="note">Sensing, connectivity, local monitoring and dashboards are available now. Anomaly detection and predictive insight are in development and validation.</p>
+      <p class="note">Sensing, connectivity, local monitoring, dashboards and threshold alerts are available now. Anomaly detection and predictive insight are in development and validation.</p>
     </div>
   </div>
 </section>
@@ -130,7 +129,7 @@
     <div class="prose">
       <p>The same principles apply wherever organisations depend on physical assets, from facilities management to infrastructure. Where we go next will be chosen by evidence, and by where our customers pull us.</p>
       <p>We are stronger together: not because information is gathered and sold back to us, but because knowledge can flow between people who keep control of what is theirs.</p>
-      <div class="btns" style="margin-top:32px">
+      <div class="btns mt">
         <a class="btn btn-primary" href="mailto:hello@aitechfutures.com?subject=Monitoring%20opportunity">Discuss your monitoring opportunity</a>
         <a class="btn btn-secondary" href="index.html">Back to the homepage</a>
       </div>
@@ -150,20 +149,18 @@
         <li><a href="index.html#evidence">Evidence</a></li>
         <li><a href="index.html#approach">Approach</a></li>
         <li><a href="index.html#team">Team</a></li>
+        <li><a href="vision.html">Our vision</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
         <li><a href="mailto:hello@aitechfutures.com">hello@aitechfutures.com</a></li>
       </ul>
     </nav>
     <div class="legal">
       <span>© 2026 AI Technology Futures Ltd. All rights reserved.</span>
+      <span>Registered in England and Wales, company number 15710953. Registered office: 8 Leinster Square, London, W2 4PL.</span>
     </div>
   </div>
 </footer>
 
-<script>
-(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');if(!b)return;
-b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Close':'Menu';});
-n.addEventListener('click',function(e){if(e.target.tagName==='A'&&n.classList.contains('open')){n.classList.remove('open');b.setAttribute('aria-expanded','false');b.textContent='Menu';}});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'&&n.classList.contains('open')){n.classList.remove('open');b.setAttribute('aria-expanded','false');b.textContent='Menu';b.focus();}});})();
-</script>
+<script src="assets/site.js" defer></script>
 </body>
 </html>

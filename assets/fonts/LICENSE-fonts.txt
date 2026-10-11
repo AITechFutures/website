@@ -1,0 +1,9 @@
+Fonts in this folder are self-hosted copies of the Latin subsets distributed by Google Fonts.
+Each is licensed under the SIL Open Font License, Version 1.1 (https://openfontlicense.org).
+
+- Bebas Neue: Copyright the Bebas Neue Project Authors (https://github.com/dharmatype/Bebas-Neue)
+- JetBrains Mono: Copyright the JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
+- Montserrat: Copyright the Montserrat Project Authors (https://github.com/JulietaUla/Montserrat)
+- Space Grotesk: Copyright the Space Grotesk Project Authors (https://github.com/floriankarsten/space-grotesk)
+
+A Basic Latin subset of JetBrains Mono is also embedded in the SVG drawings in assets/img/.
