@@ -1,0 +1,93 @@
+/* Monitoring fit check (fit-check.html). Uses the brand tokens from site.css only; no new colours. */
+.fc-hero{padding:clamp(40px,5vw,72px) 0 clamp(36px,4vw,56px)}
+.fc-hero h1{max-width:20ch}
+.fc-hero .lede{margin-top:var(--s4)}
+.fc-facts{list-style:none;margin:var(--s4) 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.fc-facts li{font:500 .78rem var(--f-mono);letter-spacing:.04em;color:var(--white);border:1px solid #33353d;border-radius:2px;padding:6px 10px}
+
+.fc-section{padding-top:clamp(32px,4vw,56px)}
+.fc,.fc-result{max-width:820px;margin:0 auto;background:var(--white);border-radius:var(--radius);border-top:3px solid var(--logo-ink);padding:clamp(20px,4vw,48px)}
+.fc-result:focus{outline:none}
+.fc,.fc-result{scroll-margin-top:80px} /* clears the sticky header */
+
+/* progress */
+.fc-progress{height:4px;background:var(--soft-gray);border-radius:2px;overflow:hidden;margin-bottom:var(--s3)}
+.fc-progress span{display:block;height:100%;width:0;background:var(--deep-blue);transition:width .25s ease}
+.fc-count{font:500 .75rem var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--deep-blue);margin:0 0 var(--s3)}
+
+/* questions */
+.fc-step{border:0;margin:0 0 var(--s6);padding:0;min-width:0}
+.fc-step legend{font:700 clamp(1.15rem,1.8vw,1.4rem)/1.3 var(--f-sub);padding:0;margin:0 0 var(--s3);max-width:40ch}
+.fc-step legend:focus{outline:none}
+.fc-hint{color:var(--text-gray);margin:calc(-1 * var(--s2)) 0 var(--s4);max-width:60ch}
+.fc-opts{display:grid;gap:10px}
+.fc-opts label{position:relative;display:block;cursor:pointer}
+.fc-opts input{position:absolute;opacity:0;width:1px;height:1px}
+.fc-opts span{display:block;border:1.5px solid #d6d7dc;border-radius:var(--radius);padding:14px 16px 14px 48px;font:600 .98rem/1.35 var(--f-sub);transition:border-color .12s,background .12s}
+.fc-opts span::before{content:"";position:absolute;left:16px;top:16px;width:16px;height:16px;border:2px solid var(--industrial-gray);background:var(--white)}
+.fc-opts input[type=radio]+span::before{border-radius:50%}
+.fc-opts small{display:block;font:400 .88rem/1.4 var(--f-body);color:var(--text-gray);margin-top:2px}
+.fc-opts label:hover span{border-color:var(--text-gray)}
+.fc-opts input:focus-visible+span{outline:3px solid var(--future-blue);outline-offset:2px}
+.fc-opts input:checked+span{border-color:var(--deep-blue);background:var(--soft-gray)}
+.fc-opts input:checked+span::before{border-color:var(--deep-blue);background:var(--deep-blue);box-shadow:inset 0 0 0 3px var(--white)}
+.fc-opts input:disabled+span{opacity:.45;cursor:not-allowed}
+
+/* contact */
+.fc-fields{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3) var(--s4)}
+.fc-wide{grid-column:1/-1}
+.fc-field span{display:block;font:600 .88rem var(--f-sub);margin-bottom:6px}
+.fc-field em{font-style:normal;font-weight:500;color:var(--text-gray)}
+.fc-field input,.fc-field textarea{width:100%;font:400 1rem/1.4 var(--f-body);color:var(--logo-ink);background:var(--white);border:1.5px solid #d6d7dc;border-radius:var(--radius);padding:11px 12px;min-height:46px}
+.fc-field input:focus,.fc-field textarea:focus{outline:3px solid var(--future-blue);outline-offset:1px;border-color:var(--deep-blue)}
+.fc-field input[aria-invalid=true]{border-color:var(--logo-ink);border-width:2px}
+.fc-consent{display:flex;gap:12px;align-items:flex-start;margin:var(--s4) 0 var(--s3);cursor:pointer}
+.fc-consent input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--deep-blue);flex:none}
+.fc-small{font-size:.88rem;color:var(--text-gray);margin:0}
+@media (max-width:600px){.fc-fields{grid-template-columns:1fr}}
+
+.fc-hp{position:absolute;left:-9999px}
+.fc-error{font:600 .92rem var(--f-sub);color:var(--logo-ink);border-left:3px solid var(--deep-blue);padding-left:12px;margin:0 0 var(--s4)}
+.fc-error:empty{display:none}
+
+/* navigation */
+.fc-nav{display:flex;flex-wrap:wrap;align-items:center;gap:12px;border-top:1px solid var(--soft-gray);padding-top:var(--s4)}
+.fc-nav .fc-next,.fc-nav .fc-submit{margin-left:auto}
+.fc-skip{background:none;border:0;padding:12px 4px;font:600 .9rem var(--f-sub);color:var(--deep-blue);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.btn{cursor:pointer}
+.fc-back,.fc-next,.fc-skip,.fc-count,.fc-progress{display:none}
+
+/* with JavaScript: one question at a time */
+.fc.is-js .fc-step{display:none;margin-bottom:var(--s5)}
+.fc.is-js .fc-step.is-current{display:block}
+.fc.is-js .fc-count{display:block}
+.fc.is-js .fc-progress{display:block}
+.fc.is-js .fc-back,.fc.is-js .fc-next{display:inline-flex}
+.fc.is-js .fc-submit{display:none}
+.fc.is-js.on-contact .fc-next{display:none}
+.fc.is-js.on-contact .fc-submit{display:inline-flex}
+.fc.is-js.on-contact .fc-skip{display:inline-block}
+.fc.is-js.on-first .fc-back{visibility:hidden}
+.fc.is-busy{opacity:.6;pointer-events:none}
+@media (max-width:600px){
+  .fc-nav{gap:8px}
+  .fc.is-js.on-contact .fc-nav{flex-direction:column-reverse;align-items:stretch}
+  .fc.is-js.on-contact .fc-nav .fc-submit{margin-left:0}
+  .fc.is-js.on-contact .fc-back{display:none}
+}
+
+/* result */
+.fc-result-head h2{max-width:24ch}
+.fc-result-head .lede{margin:var(--s4) 0 0;color:var(--text-gray)}
+.fc-sent{font:500 .8rem/1.5 var(--f-mono);letter-spacing:.02em;color:var(--deep-blue);margin:var(--s3) 0 0}
+.fc-sent:empty{display:none}
+.fc-meters{display:grid;gap:14px;margin:var(--s5) 0;padding:var(--s4) 0;border-top:1px solid var(--soft-gray);border-bottom:1px solid var(--soft-gray)}
+.fc-meter{display:grid;grid-template-columns:190px 1fr 48px;gap:var(--s3);align-items:center}
+.fc-meter .k{font:600 .9rem var(--f-sub)}
+.fc-meter .bar{height:10px;background:var(--soft-gray);border-radius:2px;overflow:hidden}
+.fc-meter .bar span{display:block;height:100%;width:0;background:var(--deep-blue);transition:width .6s ease}
+.fc-meter .v{font:500 .82rem var(--f-mono);text-align:right;color:var(--text-gray)}
+@media (max-width:600px){.fc-meter{grid-template-columns:1fr 48px;gap:6px 12px}.fc-meter .k{grid-column:1/-1}}
+.fc-sub{margin:var(--s5) 0 var(--s3)}
+.fc-status{margin-top:var(--s5)}
+.fc-result .note{margin-top:var(--s4)}

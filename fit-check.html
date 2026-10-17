@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Monitoring Fit Check | ATF</title>
+<meta name="description" content="Twelve questions, about three minutes: find out whether edge-based equipment monitoring is a good fit for your site, with an honest result and practical next steps.">
+<!-- PREVIEW ONLY: remove the next line before this page goes live on aitechfutures.com -->
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://www.aitechfutures.com/fit-check.html">
+<meta property="og:url" content="https://www.aitechfutures.com/fit-check.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ATF">
+<meta property="og:title" content="Monitoring Fit Check | ATF">
+<meta property="og:description" content="Is edge monitoring right for your site? Twelve questions, an honest answer.">
+<meta property="og:image" content="https://www.aitechfutures.com/og-share-1200x630.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#000000">
+<link rel="preload" href="assets/fonts/bebas-neue.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/fit-check.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html#top" aria-label="ATF home">
+      <img src="assets/logo/ATF_wide_applied_colour-on-dark.svg" alt="ATF Applied Intelligence" width="212" height="49">
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html#platform">Platform</a></li>
+        <li><a href="index.html#evidence">Evidence</a></li>
+        <li><a href="index.html#approach">Approach</a></li>
+        <li><a href="index.html#technology">Technology</a></li>
+        <li><a href="index.html#team">Team</a></li>
+      </ul>
+      <a class="btn btn-primary" href="index.html#contact">Talk to us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="dark fc-hero" aria-labelledby="fc-h">
+  <div class="wrap">
+    <p class="eyebrow">Monitoring fit check</p>
+    <h1 id="fc-h">Is edge monitoring right for your site?</h1>
+    <p class="lede">Answer twelve short questions about your equipment and how you maintain it. You’ll get an honest view of whether monitoring is likely to pay its way, and practical next steps either way.</p>
+    <ul class="fc-facts">
+      <li>12 questions</li>
+      <li>About 3 minutes</li>
+      <li>Instant result</li>
+    </ul>
+  </div>
+</section>
+
+<section class="fc-section" aria-label="Fit check questions">
+  <div class="wrap">
+    <!-- Netlify Forms: the static markup below is what Netlify reads at deploy time to register the form and its fields. Keep field names stable. -->
+    <form class="fc" id="fc" name="fit-check" method="POST" action="fit-check.html?sent=1" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+      <input type="hidden" name="form-name" value="fit-check">
+      <p class="fc-hp"><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <input type="hidden" name="score_need" value="">
+      <input type="hidden" name="score_fit" value="">
+      <input type="hidden" name="score_momentum" value="">
+      <input type="hidden" name="score_total" value="">
+      <input type="hidden" name="result_tier" value="">
+      <input type="hidden" name="lead_type" value="">
+
+      <div class="fc-progress" aria-hidden="true"><span></span></div>
+      <p class="fc-count" aria-live="polite"></p>
+
+      <!-- 1 -->
+      <fieldset class="fc-step" data-key="sector">
+        <legend>Which best describes your organisation?</legend>
+        <div class="fc-opts">
+          <label><input type="radio" name="sector" value="Discrete manufacturing" data-fit="3" required><span>Discrete manufacturing<small>Engineering, automotive, aerospace, assembly</small></span></label>
+          <label><input type="radio" name="sector" value="Process manufacturing" data-fit="3"><span>Process manufacturing<small>Food and drink, chemicals, pharmaceuticals, materials</small></span></label>
+          <label><input type="radio" name="sector" value="Utilities or infrastructure" data-fit="2"><span>Utilities or infrastructure<small>Water, energy, transport</small></span></label>
+          <label><input type="radio" name="sector" value="Estates and facilities" data-fit="2"><span>Estates and facilities<small>Plant rooms, HVAC, building services</small></span></label>
+          <label><input type="radio" name="sector" value="Other" data-fit="1"><span>Something else</span></label>
+        </div>
+      </fieldset>
+
+      <!-- 2 -->
+      <fieldset class="fc-step" data-key="assets">
+        <legend>Roughly how many critical rotating machines are on your main site?</legend>
+        <p class="fc-hint">Motors, pumps, fans, compressors, gearboxes: the machines whose failure would stop or slow the operation.</p>
+        <div class="fc-opts">
+          <label><input type="radio" name="assets" value="Fewer than 10" data-fit="1" required><span>Fewer than 10</span></label>
+          <label><input type="radio" name="assets" value="10 to 50" data-fit="3"><span>10 to 50</span></label>
+          <label><input type="radio" name="assets" value="50 to 200" data-fit="3"><span>50 to 200</span></label>
+          <label><input type="radio" name="assets" value="More than 200" data-fit="2"><span>More than 200</span></label>
+          <label><input type="radio" name="assets" value="Not sure" data-fit="1"><span>Not sure</span></label>
+        </div>
+      </fieldset>
+
+      <!-- 3 -->
+      <fieldset class="fc-step" data-key="approach">
+        <legend>How is maintenance mostly carried out today?</legend>
+        <div class="fc-opts">
+          <label><input type="radio" name="approach" value="Mostly reactive" data-need="3" required><span>Mostly reactive<small>We fix things when they break</small></span></label>
+          <label><input type="radio" name="approach" value="Planned" data-need="3"><span>Planned<small>Tasks on a calendar or run-hours schedule</small></span></label>
+          <label><input type="radio" name="approach" value="Some condition monitoring" data-need="2"><span>Some condition monitoring<small>Inspection routes, handheld checks or periodic surveys</small></span></label>
+          <label><input type="radio" name="approach" value="Continuous monitoring on most critical assets" data-need="1"><span>Continuous monitoring<small>Online monitoring already covers most critical assets</small></span></label>
+        </div>
+      </fieldset>
+
+      <!-- 4 -->
+      <fieldset class="fc-step" data-key="frequency">
+        <legend>How often does unplanned equipment downtime disrupt your operation?</legend>
+        <div class="fc-opts">
+          <label><input type="radio" name="frequency" value="Weekly or more" data-need="3" required><span>Weekly or more</span></label>
+          <label><input type="radio" name="frequency" value="Roughly monthly" data-need="3"><span>Roughly monthly</span></label>
+          <label><input type="radio" name="frequency" value="A few times a year" data-need="2"><span>A few times a year</span></label>
+          <label><input type="radio" name="frequency" value="Rarely" data-need="0"><span>Rarely</span></label>
+        </div>
+      </fieldset>
+
+      <!-- 5 -->
+      <fieldset class="fc-step" data-key="impact">
+        <legend>Roughly what does an hour of unplanned downtime cost on your most critical line or system?</legend>
+        <p class="fc-hint">Your best estimate is fine. Include lost output, overtime, scrap and any penalties.</p>
+        <div class="fc-opts">
+          <label><input type="radio" name="impact" value="Under £1,000" data-need="1" required><span>Under £1,000</span></label>
+          <label><input type="radio" name="impact" value="£1,000 to £10,000" data-need="2"><span>£1,000 to £10,000</span></label>
+          <label><input type="radio" name="impact" value="£10,000 to £50,000" data-need="3"><span>£10,000 to £50,000</span></label>
+          <label><input type="radio" name="impact" value="Over £50,000" data-need="3"><span>Over £50,000</span></label>
+          <label><input type="radio" name="impact" value="Not sure" data-need="1"><span>Not sure</span></label>
+        </div>
+      </fieldset>
+
+      <!-- 6 -->
+      <fieldset class="fc-step" data-key="systems" data-multi>
+        <legend>Which of these do you already have?</legend>
+        <p class="fc-hint">Select all that apply.</p>
+        <div class="fc-opts">
+          <label><input type="checkbox" name="systems" value="CMMS or maintenance management software"><span>Maintenance management software (CMMS)</span></label>
+          <label><input type="checkbox" name="systems" value="SCADA or PLC control systems"><span>SCADA or PLC control systems</span></label>
+          <label><input type="checkbox" name="systems" value="Data historian"><span>A data historian</span></label>
+          <label><input type="checkbox" name="systems" value="Some condition sensors already fitted"><span>Some condition sensors already fitted</span></label>
+          <label><input type="checkbox" name="systems" value="Mainly paper or spreadsheets" data-exclusive><span>Mainly paper or spreadsheets</span></label>
+        </div>
+      </fieldset>
+
+      <!-- 7 -->
+      <fieldset class="fc-step" data-key="network">
+        <legend>What network connectivity is there near your critical equipment?</legend>
+        <div class="fc-opts">
+          <label><input type="radio" name="network" value="Reliable wired or wireless network" required><span>Reliable wired or wireless network</span></label>
+          <label><input type="radio" name="network" value="Patchy coverage"><span>Patchy coverage</span></label>
+          <label><input type="radio" name="network" value="None, or new devices not allowed"><span>None, or new devices aren’t allowed on it</span></label>
+          <label><input type="radio" name="network" value="Not sure"><span>Not sure</span></label>
+        </div>
+      </fieldset>
+
+      <!-- 8 -->
+      <fieldset class="fc-step" data-key="data">
+        <legend>Where does your operational data need to stay?</legend>
+        <div class="fc-opts">
+          <label><input type="radio" name="data" value="Must stay on site" data-fit="3" required><span>It must stay on site</span></label>
+          <label><input type="radio" name="data" value="Cloud acceptable with controls" data-fit="2"><span>Cloud is acceptable with the right controls</span></label>
+          <label><input type="radio" name="data" value="No policy yet" data-fit="2"><span>We don’t have a policy yet</span></label>
+          <label><input type="radio" name="data" value="Not sure" data-fit="1"><span>Not sure</span></label>
+        </div>
+      </fieldset>
+
+      <!-- 9 -->
+      <fieldset class="fc-step" data-key="owner">
+        <legend>Who is driving the interest in better monitoring?</legend>
+        <div class="fc-opts">
+          <label><input type="radio" name="owner" value="Senior leadership with a clear mandate" data-momentum="3" required><span>Senior leadership, with a clear mandate</span></label>
+          <label><input type="radio" name="owner" value="Maintenance, engineering or operations manager with budget" data-momentum="3"><span>A maintenance, engineering or operations manager with budget</span></label>
+          <label><input type="radio" name="owner" value="An engineer or individual exploring options" data-momentum="2"><span>An engineer or individual exploring options</span></label>
+          <label><input type="radio" name="owner" value="Just researching" data-momentum="1"><span>Nobody yet: I’m researching</span></label>
+        </div>
+      </fieldset>
+
+      <!-- 10 -->
+      <fieldset class="fc-step" data-key="timing">
+        <legend>When would you like something in place?</legend>
+        <div class="fc-opts">
+          <label><input type="radio" name="timing" value="Within 3 months" data-momentum="3" required><span>Within 3 months</span></label>
+          <label><input type="radio" name="timing" value="3 to 6 months" data-momentum="3"><span>In 3 to 6 months</span></label>
+          <label><input type="radio" name="timing" value="6 to 12 months" data-momentum="2"><span>In 6 to 12 months</span></label>
+          <label><input type="radio" name="timing" value="No fixed timeline" data-momentum="1"><span>No fixed timeline</span></label>
+        </div>
+      </fieldset>
+
+      <!-- 11 -->
+      <fieldset class="fc-step" data-key="pilot">
+        <legend>Would you consider a small, low-disruption pilot on one or two machines?</legend>
+        <div class="fc-opts">
+          <label><input type="radio" name="pilot" value="Yes" data-momentum="3" required><span>Yes</span></label>
+          <label><input type="radio" name="pilot" value="Possibly, depending on scope" data-momentum="2"><span>Possibly, depending on scope</span></label>
+          <label><input type="radio" name="pilot" value="Not at this stage" data-momentum="0"><span>Not at this stage</span></label>
+        </div>
+      </fieldset>
+
+      <!-- 12 -->
+      <fieldset class="fc-step" data-key="outcomes" data-multi data-max="3">
+        <legend>What would make the biggest difference to you?</legend>
+        <p class="fc-hint">Choose up to three.</p>
+        <div class="fc-opts">
+          <label><input type="checkbox" name="outcomes" value="Fewer unexpected failures"><span>Fewer unexpected failures</span></label>
+          <label><input type="checkbox" name="outcomes" value="Better planning of maintenance work"><span>Better planning of maintenance work</span></label>
+          <label><input type="checkbox" name="outcomes" value="Remote visibility of equipment"><span>Seeing equipment condition without walking the site</span></label>
+          <label><input type="checkbox" name="outcomes" value="Environmental monitoring"><span>Environmental monitoring<small>Temperature, humidity, air quality</small></span></label>
+          <label><input type="checkbox" name="outcomes" value="Understanding energy use"><span>Understanding energy use</span></label>
+          <label><input type="checkbox" name="outcomes" value="Capturing experienced engineers’ knowledge"><span>Capturing experienced engineers’ knowledge</span></label>
+          <label><input type="checkbox" name="outcomes" value="Better maintenance records and evidence"><span>Better maintenance records and evidence</span></label>
+        </div>
+      </fieldset>
+
+      <!-- Contact -->
+      <fieldset class="fc-step fc-contact" data-key="contact" data-optional>
+        <legend>Would you like to talk it through?</legend>
+        <p class="fc-hint">Leave your details and someone from the ATF team will review your answers and get in touch. Or skip straight to your result.</p>
+        <div class="fc-fields">
+          <label class="fc-field"><span>Name</span><input type="text" name="name" autocomplete="name"></label>
+          <label class="fc-field"><span>Work email</span><input type="email" name="email" autocomplete="email"></label>
+          <label class="fc-field"><span>Company</span><input type="text" name="company" autocomplete="organization"></label>
+          <label class="fc-field"><span>Role</span><input type="text" name="role" autocomplete="organization-title"></label>
+          <label class="fc-field"><span>Phone <em>(optional)</em></span><input type="tel" name="phone" autocomplete="tel"></label>
+          <label class="fc-field fc-wide"><span>Anything else we should know? <em>(optional)</em></span><textarea name="message" rows="3"></textarea></label>
+        </div>
+        <label class="fc-consent"><input type="checkbox" name="updates" value="Yes"><span>Send me occasional updates from ATF. You can unsubscribe at any time.</span></label>
+        <p class="fc-small">We use your details to respond to you. Your answers are also shared with ATF, whether or not you leave details, to help us understand what organisations like yours need. See our <a href="privacy.html">privacy notice</a>.</p>
+      </fieldset>
+
+      <p class="fc-error" role="alert"></p>
+
+      <div class="fc-nav">
+        <button type="button" class="btn btn-secondary fc-back">Back</button>
+        <button type="button" class="fc-skip">Skip and see my result</button>
+        <button type="button" class="btn btn-primary fc-next">Next</button>
+        <button type="submit" class="btn btn-primary fc-submit">Send and see my result</button>
+      </div>
+    </form>
+
+    <!-- Result (filled in by assets/fit-check.js) -->
+    <div class="fc-result" id="fc-result" hidden tabindex="-1">
+      <div class="fc-result-head">
+        <p class="eyebrow" id="fc-r-tier"></p>
+        <h2 id="fc-r-h"></h2>
+        <p class="lede" id="fc-r-p"></p>
+        <p class="fc-sent" id="fc-r-sent"></p>
+      </div>
+
+      <div class="fc-meters" aria-label="Your profile">
+        <div class="fc-meter" data-dim="need"><span class="k">Need for monitoring</span><span class="bar"><span></span></span><span class="v"></span></div>
+        <div class="fc-meter" data-dim="fit"><span class="k">Fit with the platform</span><span class="bar"><span></span></span><span class="v"></span></div>
+        <div class="fc-meter" data-dim="momentum"><span class="k">Readiness to act</span><span class="bar"><span></span></span><span class="v"></span></div>
+      </div>
+
+      <h3 class="fc-sub">Suggested next steps for your site</h3>
+      <ul class="design" id="fc-r-recs"></ul>
+
+      <div class="status fc-status">
+        <div><span class="tag">Available now</span><p>Sensing, connectivity, local monitoring, dashboards and threshold alerts.</p></div>
+        <div class="dev"><span class="tag">In development and validation</span><p>Anomaly detection and predictive insight.</p></div>
+      </div>
+
+      <div class="btns mt">
+        <a class="btn btn-primary" id="fc-r-book" href="https://outlook.office.com/bookwithme/user/a3ce2eb0c23a433399eefab352be95eb@aitechfutures.com?anonymous&amp;ismsaljsauthenabled&amp;ep=pcard" target="_blank" rel="noopener">Book a 30-minute call</a>
+        <a class="btn btn-secondary" id="fc-r-cta" href="mailto:hello@aitechfutures.com">Email us your result</a>
+        <button type="button" class="btn btn-secondary" id="fc-r-restart">Start again</button>
+      </div>
+      <p class="note">This is an indicative self-assessment based on your answers, not a site survey. If ATF isn’t the right fit, we’ll say so.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <img src="assets/logo/ATF_compact_plain_white.svg" alt="ATF" width="120" height="60">
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html#platform">Platform</a></li>
+        <li><a href="index.html#evidence">Evidence</a></li>
+        <li><a href="index.html#approach">Approach</a></li>
+        <li><a href="index.html#technology">Technology</a></li>
+        <li><a href="index.html#team">Team</a></li>
+        <li><a href="vision.html">Our vision</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="mailto:hello@aitechfutures.com">hello@aitechfutures.com</a></li>
+      </ul>
+    </nav>
+    <div class="legal">
+      <span>© 2026 AI Technology Futures Ltd. All rights reserved.</span>
+      <span>Registered in England and Wales, company number 15710953. Registered office: 8 Leinster Square, London, W2 4PL.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
+<script src="assets/fit-check.js" defer></script>
+</body>
+</html>
